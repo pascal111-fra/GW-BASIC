@@ -1,0 +1,18 @@
+10 PRINT "type a number ";
+20 INPUT X
+30 PRINT "steps to 10 as max and 0 to exit ";
+40 INPUT Y
+50 IF Y=0 THEN 180
+60 IF Y>10 THEN 30
+70 LET W=X+Y
+80 LET R=0
+90 FOR I=X TO W
+100 LET R=R+1
+110 IF I<>W THEN PRINT "*"; ELSE PRINT "*";" ";R;
+120 IF I<W THEN PRINT "      #";
+130 IF I<(W-1) THEN PRINT "     &";
+140 IF I=(W-1) THEN PRINT "     &";(W-1);
+150 IF I=W THEN PRINT "  #";W ELSE PRINT
+160 NEXT I
+170 GOTO 10
+180 END
